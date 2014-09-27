@@ -1,21 +1,37 @@
 public class Rectangulo {
 
-public double perimetro (){
+private double base;
+private double altura;
+private double perimetro;
+private double superficie;
 
-        double result = 0;
-        result = (2*ladoa) + (2*ladob);
-        return result;
+  public void setBase(double base)
+  {
+this.base = base; 
+  }
 
+  public void setAltura (double altura)
+  {
+this.altura = altura;
+  }
 
+  public double  getbase()
+  {
+return base;
+  }
 
-        }
+  public double  getaltura()
+  {
+return altura;
+  }
 
-public double area (){
-
-        double result = 0;
-        result = ladoa*ladob;
-        return result;
-
-
-        }
-}  
+public double perimetro() {
+perimetro = (2*base) + (2+altura);
+return perimetro;
+ }
+public double superficie() {
+superficie = base * altura;
+return superficie; 
+ }
+}
+ 

@@ -1,27 +1,29 @@
-import java.util.Scanner; 
+import java.util.Scanner;
 
 public class OperacionRectangulo{
 
-public static void main (String args []){
+public static void main (String[] args ){
 
-	double ladoa, ladob, resulp, resula;
-	Rectangulo Operaciones = new  Rectangulo;
+double base;
+double altura; 
 
+Rectangulo operaciones = new Rectangulo();
 
-	Scanner sc = new Scanner(System.in);
-	System.out.print("\ingresa el ladoa: ");
-	ladoa = sc.nextDouble();
- 
-
-	resula = Rectangulo.area();
-	resulp = Rectangulo.perimetro();
+Scanner sc = new Scanner(System.in);
+System.out.print("\ningresa la altura del rectangulo: ");
+altura = sc.nextDouble();
 
 
-  System.out.println("la area es : " + resula);  
-  System.out.println("el perimetro  es : " + resulp);  
+System.out.print("\ningresa la base del rectangulo: ");
+base = sc.nextDouble();
 
 
-    }
+operaciones.setBase(base);
+operaciones.setAltura(altura);
+
+System.out.println("\nla area es : " + operaciones.superficie());
+
+System.out.println("\nel perimetro es : " + operaciones.perimetro()); 
+
+ }
 }
-
-
