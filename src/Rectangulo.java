@@ -26,7 +26,7 @@ return altura;
   }
 
 public double perimetro() {
-perimetro = (2*base) + (2+altura);
+perimetro = (2*base) + (2*altura);
 return perimetro;
  }
 public double superficie() {
